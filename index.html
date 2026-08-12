@@ -1,297 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+
+  <!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Om Hari Bag House</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-}
-
-body{
-  background:#1b0d08;
-  color:#fff;
-}
-
-header{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:30px 20px;
-  background:
-    radial-gradient(circle at top,#5b2818 0,#1b0d08 55%);
-}
-
-.container{
-  max-width:1000px;
-  width:100%;
-}
-
-.logo{
-  width:150px;
-  height:150px;
-  margin:auto;
-  border:3px solid #d9aa55;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:55px;
-  color:#d9aa55;
-  box-shadow:0 0 30px #8b5a25;
-}
-
-h1{
-  margin-top:25px;
-  font-size:48px;
-  color:#e6bd70;
-  letter-spacing:2px;
-}
-
-.subtitle{
-  font-size:20px;
-  margin-top:10px;
-  color:#f5e5c5;
-}
-
-.tagline{
-  margin:20px auto;
-  max-width:650px;
-  color:#d7c2a5;
-  line-height:1.6;
-}
-
-.buttons{
-  margin-top:30px;
-  display:flex;
-  gap:15px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.btn{
-  text-decoration:none;
-  padding:14px 25px;
-  border-radius:30px;
-  font-weight:bold;
-  display:inline-block;
-}
-
-.whatsapp{
-  background:#25D366;
-  color:white;
-}
-
-.call{
-  background:#d9aa55;
-  color:#1b0d08;
-}
-
-section{
-  padding:70px 20px;
-  text-align:center;
-}
-
-section h2{
-  font-size:35px;
-  color:#e6bd70;
-  margin-bottom:35px;
-}
-
-.products{
-  max-width:1100px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#301710;
-  border:1px solid #76502a;
-  padding:35px 20px;
-  border-radius:18px;
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-7px);
-  border-color:#e6bd70;
-}
-
-.icon{
-  font-size:55px;
-  margin-bottom:15px;
-}
-
-.card h3{
-  color:#e6bd70;
-  margin-bottom:10px;
-}
-
-.card p{
-  color:#d7c2a5;
-  line-height:1.5;
-}
-
-.wholesale{
-  background:#26110b;
-}
-
-.contact{
-  max-width:700px;
-  margin:auto;
-  background:#301710;
-  padding:40px 20px;
-  border-radius:20px;
-  border:1px solid #76502a;
-}
-
-.contact p{
-  margin:12px;
-  color:#e8d7bd;
-}
-
-footer{
-  padding:25px;
-  text-align:center;
-  background:#100704;
-  color:#a9947b;
-}
-
-@media(max-width:600px){
-  h1{
-    font-size:34px;
-  }
-
-  .subtitle{
-    font-size:17px;
-  }
-
-  section h2{
-    font-size:28px;
-  }
-}
+body {font-family:Arial; margin:0; background:#f5f5f5;}
+h1 {text-align:center; color:#d63384; padding:20px;}
+.bag-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; padding:20px; max-width:1200px; margin:auto;}
+.bag-card {background:white; border-radius:15px; padding:15px; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+.bag-card img {width:100%; height:250px; object-fit:cover; border-radius:10px;}
+.price {font-size:22px; color:green; font-weight:bold; margin:10px 0;}
+.btn {background:#25D366; color:white; padding:12px 25px; text-decoration:none; border-radius:8px; display:inline-block; font-weight:bold;}
 </style>
 </head>
-
 <body>
 
-<header>
-  <div class="container">
+<h1>Om Hari Bag House - Collection</h1>
 
-    <div class="logo">ॐ</div>
-
-    <h1>OM HARI</h1>
-
-    <div class="subtitle">
-      BAG HOUSE
-    </div>
-
-    <p class="tagline">
-      Wholesale of All Types of Jewellery Bags,
-      Carry Bags, Gift Bags & Purses.
-    </p>
-
-    <div class="buttons">
-      <a class="btn whatsapp"
-         href="https://wa.me/918305635902"
-         target="_blank">
-         💬 WhatsApp Us
-      </a>
-
-      <a class="btn call"
-         href="tel:8305635902">
-         📞 Call Now
-      </a>
-    </div>
-
+<div class="bag-grid">
+  <div class="bag-card">
+    <img src="bag-black-gold.jpg">
+    <h3>Black Golden Branch Tote</h3>
+    <p class="price">₹90 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
   </div>
-</header>
 
-<section>
-  <h2>Our Products</h2>
-
-  <div class="products">
-
-    <div class="card">
-      <div class="icon">👜</div>
-      <h3>Carry Bags</h3>
-      <p>Premium quality carry bags available for wholesale.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">💎</div>
-      <h3>Jewellery Bags</h3>
-      <p>Beautiful bags specially designed for jewellery packaging.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🎁</div>
-      <h3>Gift Bags</h3>
-      <p>Attractive gift bags for shops, events and special occasions.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">👛</div>
-      <h3>Purses</h3>
-      <p>Stylish purses available in different designs and sizes.</p>
-    </div>
-
+  <div class="bag-card">
+    <img src="floral.jpg">
+    <h3>Floral Pink Tote</h3>
+    <p class="price">₹85 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
   </div>
-</section>
 
-<section class="wholesale">
-  <h2>Wholesale Available</h2>
-
-  <p class="tagline">
-    Looking for quality bags in bulk?
-    Contact Om Hari Bag House for wholesale enquiries
-    and product details.
-  </p>
-
-  <div class="buttons">
-    <a class="btn whatsapp"
-       href="https://wa.me/918305635902"
-       target="_blank">
-       💬 Wholesale Enquiry
-    </a>
+  <div class="bag-card">
+    <img src="bag-pink.jpg">
+    <h3>Nishav Jewellers Shiny Bag</h3>
+    <p class="price">₹75 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
   </div>
-</section>
 
-<section>
-  <h2>Contact Us</h2>
-
-  <div class="contact">
-    <p>🏪 <strong>Om Hari Bag House</strong></p>
-    <p>📱 8305635902</p>
-    <p>👜 Bags • Purses • Jewellery Bags • Carry Bags</p>
-
-    <div class="buttons">
-      <a class="btn call"
-         href="tel:8305635902">
-         📞 Call
-      </a>
-
-      <a class="btn whatsapp"
-         href="https://wa.me/918305635902"
-         target="_blank">
-         💬 WhatsApp
-      </a>
-    </div>
+  <div class="bag-card">
+    <img src="bag-brown.jpg">
+    <h3>Royal Print Designer Bag</h3>
+    <p class="price">₹175 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
   </div>
-</section>
 
-<footer>
-  © 2026 Om Hari Bag House • All Rights Reserved
-</footer>
+  <div class="bag-card">
+    <img src="set.jpg">
+    <h3>Velvet Pouch Set</h3>
+    <p class="price">₹160 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
+  </div>
+
+  <div class="bag-card">
+    <img src="bag-black-gold.jpg">
+    <h3>Premium Bag</h3>
+    <p class="price">₹95 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
+  </div>
+
+  <div class="bag-card">
+    <img src="red.jpg">
+    <h3>Red Paisley Gift Bag</h3>
+    <p class="price">₹35 + Free Shipping</p>
+    <a href="https://wa.me/918305635902" class="btn">Order on WhatsApp</a>
+  </div>
+</div>
 
 </body>
-  </html>
+</html>
